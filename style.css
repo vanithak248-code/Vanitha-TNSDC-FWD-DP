@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(45deg,red,blue);
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    height: 10vh;
+    background-color: rgb(0, 139, 90);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+     border-bottom: 1px solid wheat;
+}
+nav>a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav>a:hover{
+    font-size: 20pt;
+    cursor: pointer;
+    color: gold;
+     border-bottom: 1px solid wheat;
+}
+.purple-color {
+    color: #000001;
+}
+
+.half-width{
+    float:left;
+}
+.side-img{
+    width: 50%;
+    padding-left: 25%;
+}
+
+.skill-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.primary-btn {
+    color: white;
+    background-color: #8845f4;
+    padding: 13px 42px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 20px;
+}
+h1{
+    font-size: 2.5em;
+}
+.container{
+    padding-left:20px;
+    display: inline-block;
+}
+#skills{
+    padding: 40px;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid wheat;
+}
+#courses{
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid wheat;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border-bottom: 1px solid wheat;
+    margin-top: 10vh;
+}
+#achivements-content{
+    
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+}
+.achivements {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid wheat;
+}
+.achivements-item {
+    padding: 10px;
+    border-left: 1px solid rgba(137, 130, 247, .2)
+}
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  background: #60a0f9;
+}
+.section-container {
+    width: 100%;
+    padding: 30px;
+}
+
+footer{
+    text-align: center;
+}
+.contact div{
+    width: 100%;
+}
+.contact{
+    display: grid;
+    width: 100%;
+    
+    place-content: center;
+}
+
+.contact>form {
+  display: flex;
+  width: 100%;
+  background-color: #000001;
+  padding: 20px;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #4b6cb7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact button:hover {
+  background-color: #32417c;
+}
+
+.contact a{
+    color: wheat;
+    text-decoration: none;
+}

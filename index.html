@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peter Parker Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
+  </head>
+  <body>
+    <nav id="header">
+      <a href="/">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#courses">COURSES</a>
+      <a href="#achivements">ACHIVEMENTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <main>
+      <section class="container hero" name="about" id="about">
+        <div class="half-width">
+          <h1>
+            Welcome to <span class="purple-color">Vanitha's Portfilo</span>
+          </h1>
+          <h3>Building Climber and Train Stopper</h3>
+          <p>
+            You might saw me jumping, climbing buildings, and stopping trains.
+            But nobody pays me a dime for that work. That's why I am learning
+            and mastering web development. I will not stop until I become the
+            Web Development Hero.
+          </p>
+        </div>
+        <div class="half-width">
+          <img class="side-img" src="img/profile.png" alt="" />
+        </div>
+      </section>
+      <section class="container" name="skills" id="skills">
+        <div class="half-width">
+          <img
+            class="skill-img"
+            src="./img/103cfccc-85d7-42c7-a103-51ea81196a2e.jpg"
+          />
+        </div>
+        <div class="skill-h">
+          <h2>SKILLS</h2>
+
+          <div class="skill-container">
+            <a class="primary-btn">Python</a>
+            <a class="primary-btn">HTML</a>
+            <a class="primary-btn">CSS</a>
+            <a class="primary-btn">Javascript</a>
+            <a class="primary-btn">C++</a>
+            <a class="primary-btn">Baseket Ball</a>
+            <a class="primary-btn">Basket ball</a>
+          </div>
+        </div>
+      </section>
+      <section id="courses">
+        <div class="section-container courses">
+          <h2
+            class="section-title"
+            style="border-bottom: 1px solid wheat; width: max-content"
+          >
+            Courses and certifications
+          </h2>
+          <div class="courses-grid">
+            <div class="course-card">
+              <h3>Digital Productivity</h3>
+              <br />
+              <p>Provider: NIIT foundation. Status: Completed</p>
+            </div>
+            <div class="course-card">
+              <h3>Multimedia Content Creation</h3>
+              <br />
+              <p>Provider: NASSCOM foundation. Status: On Progress</p>
+            </div>
+            <div class="course-card">
+              <h3>Frontend development</h3>
+              <br />
+              <p>Provider: IBM skillsbuild. Status: On Progress</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container achivements" id="achivements">
+        <h2>Achievements</h2>
+        <div id="achivements-content">
+          <div class="achivements-item">
+            <h3>CM trophy</h3>
+            <p class="purple-color">Got second place in basketball.</p>
+          </div>
+          <div class="achivements-item">
+            <h3>University match</h3>
+            <p class="purple-color">Played basketball in university level match.</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="">
+          <input type="text" id="email-name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea
+            rows="5"
+            id="email-body"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            onclick="alert('this feature is coming soon...')"
+          >
+            Send Message
+          </button>
+        </form>
+        <br />
+            <p>
+                Email:
+                <a href="mailto:vanithak248@gmail.com">vanithak248@gmail.com</a>
+            </p>
+      </section>
+    </main>
+    <footer>
+      <p>© Made with ❣️</p>
+    </footer>
+  </body>
+  <script>
+    const header = document.getElementById("header");
+    window.onscroll = () => {
+      if (window.scrollY > 50) {
+        header.style.backgroundColor = "rgba(255,255,255,0.2)";
+        header.style.backdropFilter = "blur(1px)";
+        header.style.color = "black";
+      } else {
+        header.style.backgroundColor = "";
+      }
+    };
+  </script>
+</html>
